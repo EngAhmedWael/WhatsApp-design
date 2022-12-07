@@ -1,0 +1,803 @@
+<html>
+
+<head>
+    
+    <title>Whatsapp</title>
+    <link rel="icon" href="whats.jfif"/>
+   <style>
+        *{
+            font-size: 15px;
+        }
+        #color{
+            border: 2px solid green;
+            width: 100%;
+            height: 20px;
+            top: 0;
+            margin: 0;
+            background-color: green;
+           position: fixed;
+        }
+        #color1{
+             border: 2px solid #eee;
+            width: 150px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            background-color: #eee;
+            position:fixed;
+        }
+        #color2{
+             border: 2px solid green;
+            width: 150px;
+            height: 100;
+            top: 0;
+            left: 0;
+            margin: 0;
+            background-color: green;
+            position:fixed;
+        }
+          #color3{
+              border: 2px solid #eee;
+              height: 100%;
+              width: 150px;
+              right: 0;
+             position: fixed;
+                 background-color: #eee;
+           
+        }
+        #color4{
+              border: 2px solid green;
+              height: 100;
+              width: 150px;
+                top:0;
+              padding: 0;
+              margin: 0;
+               right: 0;
+             position: fixed;
+                 background-color: green;
+           
+        }
+        #color5{
+             border: 2px solid #eee;
+              height: 100%;
+              width: 500px;
+                top:25;
+              padding: 0;
+              margin: 0;
+               right: 150;
+             position: fixed;
+                 background-color: white;
+            
+        }
+          #color6{
+             border: 2px solid #eee;
+              height: 50;
+              width: 499px;
+                top:0;
+              padding: 0;
+              margin: 0;
+               right: 0;
+             position: absolute;
+             
+                 background-color: #eee;
+        }
+        #icon{
+            
+              border: 2px solid #eee;
+              height: 50;
+              width: 490px;
+                top:0;
+              padding: 0;
+              margin: 0;
+            position: absolute;
+          
+                 background-color: #eee;
+           background-image: url(menu.jpg);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position:40px; 
+            
+        }
+         #icon1{
+          border: 2px solid #eee;
+              height: 50;
+              width: 490px;
+                top:0;
+              padding: 0;
+              margin: 0;
+            position: absolute;
+           
+           background-image: url(mes.png);
+            background-repeat: no-repeat;
+            background-size: 35px;
+            background-position:120px; 
+        }
+         #icon2{
+          border: 2px solid #eee;
+              height: 50;
+              width: 490px;
+                top:0;
+              padding: 0;
+              margin: 0;
+            position: absolute;
+           
+           background-image: url(wh.png);
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position:200px; 
+        }
+        #icon3{
+          border: 2px solid #eee;
+              height: 50;
+              width: 490px;
+                top:0;
+              padding: 0;
+              margin: 0;
+            position: absolute;
+           
+           background-image: url(R.png);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position:280px; 
+        }
+        #icon4{
+          border: 1px solid #eee;    
+              height: 50;
+              width: 490px;
+                top:0;
+              padding: 0;
+              margin: 0;
+            position: absolute;
+           
+           background-image: url(anw.jpg);
+           
+            background-repeat: no-repeat;
+            background-size: 35px;
+            background-position:440px;
+           
+        }
+ 
+        input{
+             border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #eee;
+              height: 30;
+              width: 380px;
+              padding: 0;
+              margin-top: 50;
+              margin-left: 90;
+            background-size: 50;
+            text-align: end;
+            position: absolute;
+           
+        }
+        #ser{
+             border: 1px solid #eee;
+            background-color: white;
+              height: 100%;
+              width: 500px;
+              padding: 0;
+              margin-top: 80;
+              margin-left: 0;
+            margin-right: 0;
+            background-size: 50;
+            text-align: end;
+            position: absolute;
+            overflow: scroll;
+        }
+        #mes{
+             border-bottom: 1px solid #eee;
+            width: 100%;
+            height: 80px;
+            margin-right: 0;
+            margin-top: 0;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho {
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 0;
+            margin-left: 420px;
+             background-image: url(ahmed.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph1 {
+            
+             text-align: left;
+             top: 10;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph2 {
+            
+             text-align: left;
+             top: 50;
+            margin-left: 150px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph3 {
+            
+             text-align: left;
+             top: 10;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+         #mes1{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 80;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho1 {
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(anw.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph4{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph5 {
+            
+             text-align: left;
+             top: 60;
+            margin-left: 290px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph6 {
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+         #mes2{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 170;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho2 {
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(os.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph7{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph8 {
+            
+             text-align: left;
+             top: 60;
+            margin-left: 290px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph9 {
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+         #mes3{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 260;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho3 {
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(OIP.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph10{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph11 {
+            
+             text-align: left;
+             top: 60;
+            margin-left: 200px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph12 {
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+   #mes4{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 360;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho4{
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(ahmed.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph13{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph14{
+            
+             text-align: left;
+             top: 60;
+            margin-left: 290px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph15 {
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+  #mes5{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 450;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho5{
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(OIP.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph16{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph17{
+            
+             text-align: left;
+             top: 60;
+            margin-left: 200px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph18 {
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+  
+  #mes6{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 550;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho6{
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(os.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph19{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph20{
+            
+             text-align: left;
+             top: 60;
+            margin-left: 290px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph21{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+  #mes7{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 650;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho7{
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(ahmed.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph22{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph23{
+            
+             text-align: left;
+             top: 60;
+            margin-left: 200px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph24{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+  #mes8{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 750;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho8{
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(os.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph25{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph26{
+            
+             text-align: left;
+             top: 60;
+            margin-left: 290px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph27{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+         #mes9{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 860;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho9{
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(anw.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph28{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph29{
+            
+             text-align: left;
+             top: 60;
+            margin-left: 290px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph30{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        } #mes10{
+             border: 1px solid #eee;
+            width: 100%;
+            height: 100px;
+            margin-right: 50;
+            margin-top: 980;
+            padding: 2px;
+            background-color: white;
+             position: absolute;
+            
+            
+        }
+        #pho10{
+            border: 1px dotted black;
+            border-radius: 50px;
+            width: 10%;
+            height: 50px;
+            margin-top: 20;
+            margin-left: 420px;
+             background-image: url(OIP.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+         #ph31{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 250px;
+            font-size: 25px;
+             position: absolute;
+        }
+       #ph32{
+            
+             text-align: left;
+             top: 60;
+            margin-left: 290px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+        #ph33{
+            
+             text-align: left;
+             top: 20;
+            margin-left: 10px;
+            font-size: 20px;
+           color: #717171;
+             position: absolute;
+        }
+               #photo{
+          
+           top: 350px;
+           left: 400px;
+           position: absolute;
+       }
+
+  </style>
+  
+ 
+    </head>
+
+<body>
+    <div id="color"></div>
+    <div id="color1"><h1 id="color2"></h1></div>
+     <div id="color3"><h1 id="color4"></h1></div>
+    <div id="color5"><h1 id="color6"> <a id="icon"></a> <a id="icon1"></a><a id="icon2"></a><a id="icon3"></a><a id="icon4"></a></h1><br/> <input type="search" placeholder="البحث عن دردشة او البدء بدردشة جديدة" /><br/><a id="ser"><h1 id="mes"><div id="pho"></div>
+        <div id="ph1">Ahmed Wael</div>
+        <div id="ph2"> نلعب كورة نهاردة انلعب كورة نهاردة</div>
+        <div id="ph3">12:00Am</div></h1>  <h1 id="mes1"><div id="pho1"></div>
+        <div id="ph4">Ali hassan</div>
+        <div id="ph5"> عامل اي يا هندسة</div>
+        <div id="ph6">12:30Am</div></h1>  <h1 id="mes2"><div id="pho2"></div>
+        <div id="ph7">Mostafa </div>
+        <div id="ph8"> كلمني عاوزك</div>
+        <div id="ph9">5:00Bm</div></h1>
+        <h1 id="mes3"><div id="pho3"></div>
+        <div id="ph10">osama </div>
+        <div id="ph11"> عملت اي في مشروع مشهمندس</div>
+        <div id="ph12">10:00Bm</div></h1>
+        <h1 id="mes4"><div id="pho4"></div>
+        <div id="ph13">waleed </div>
+        <div id="ph14"> رقمي اهو</div>
+        <div id="ph15">8:00Bm</div></h1>
+        <h1 id="mes5"><div id="pho5"></div>
+        <div id="ph16">osama </div>
+        <div id="ph17"> عملت اي في مشروع مشهمندس</div>
+        <div id="ph18">10:00Bm</div></h1>
+        <h1 id="mes6"><div id="pho6"></div>
+        <div id="ph19">Amir </div>
+        <div id="ph20"> لخصت المحاضرة</div>
+        <div id="ph21">9:00Bm</div></h1>
+        <h1 id="mes7"><div id="pho7"></div>
+        <div id="ph22">osama </div>
+        <div id="ph23"> عملت اي في مشروع مشهمندس</div>
+        <div id="ph24">12:00Bm</div></h1>
+        <h1 id="mes8"><div id="pho8"></div>
+        <div id="ph25">hosni </div>
+        <div id="ph26"> الامتحانات امتي</div>
+        <div id="ph27">1:00Am</div></h1>
+        <h1 id="mes9"><div id="pho9"></div>
+        <div id="ph28">osama </div>
+        <div id="ph29"> عملت اي </div>
+        <div id="ph30">2:00Bm</div></h1>
+        <h1 id="mes10"><div id="pho10"></div>
+        <div id="ph31">hosni </div>
+        <div id="ph32"> الامتحانات امتي</div>
+        <div id="ph33">3:00Am</div></h1>
+        </a> 
+       
+    </div>
+    <img src="wael.jpg" height="650px" width="700px" id="photo"/>
+    </body>
+
+</html>
